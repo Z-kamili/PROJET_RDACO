@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7AA0214D-7A88-4A48-8486-A91479CB4B6B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication11</RootNamespace>
+    <AssemblyName>WindowsFormsApplication11</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Approvisionner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Approvisionner.Designer.cs">
+      <DependentUpon>Approvisionner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calculer_Besoin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calculer_Besoin.Designer.cs">
+      <DependentUpon>Calculer_Besoin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CasRDACODataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CasRDACODataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Client.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Client.Designer.cs">
+      <DependentUpon>Client.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Commande.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Commande.Designer.cs">
+      <DependentUpon>Commande.cs</DependentUpon>
+    </Compile>
+    <Compile Include="csltApprovisionner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="csltApprovisionner.Designer.cs">
+      <DependentUpon>csltApprovisionner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="csltclt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="csltclt.Designer.cs">
+      <DependentUpon>csltclt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Csltcommande.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Csltcommande.Designer.cs">
+      <DependentUpon>Csltcommande.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CsltGamme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CsltGamme.Designer.cs">
+      <DependentUpon>CsltGamme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CsltIngrediant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CsltIngrediant.Designer.cs">
+      <DependentUpon>CsltIngrediant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CsltMarque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CsltMarque.Designer.cs">
+      <DependentUpon>CsltMarque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CsltNomoclature.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CsltNomoclature.Designer.cs">
+      <DependentUpon>CsltNomoclature.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Declaration_gnrl.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gamme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gamme.Designer.cs">
+      <DependentUpon>Gamme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ingrediant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ingrediant.Designer.cs">
+      <DependentUpon>Ingrediant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lgn_cmd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lgn_cmd.Designer.cs">
+      <DependentUpon>lgn_cmd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Marque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Marque.Designer.cs">
+      <DependentUpon>Marque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nomoclature.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nomoclature.Designer.cs">
+      <DependentUpon>Nomoclature.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Approvisionner.resx">
+      <DependentUpon>Approvisionner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calculer_Besoin.resx">
+      <DependentUpon>Calculer_Besoin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client.resx">
+      <DependentUpon>Client.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Commande.resx">
+      <DependentUpon>Commande.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="csltApprovisionner.resx">
+      <DependentUpon>csltApprovisionner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="csltclt.resx">
+      <DependentUpon>csltclt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Csltcommande.resx">
+      <DependentUpon>Csltcommande.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CsltGamme.resx">
+      <DependentUpon>CsltGamme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CsltIngrediant.resx">
+      <DependentUpon>CsltIngrediant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CsltMarque.resx">
+      <DependentUpon>CsltMarque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CsltNomoclature.resx">
+      <DependentUpon>CsltNomoclature.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gamme.resx">
+      <DependentUpon>Gamme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ingrediant.resx">
+      <DependentUpon>Ingrediant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lgn_cmd.resx">
+      <DependentUpon>lgn_cmd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Marque.resx">
+      <DependentUpon>Marque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nomoclature.resx">
+      <DependentUpon>Nomoclature.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="CasRDACODataSet.xsc">
+      <DependentUpon>CasRDACODataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CasRDACODataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CasRDACODataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CasRDACODataSet.xss">
+      <DependentUpon>CasRDACODataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoRDA.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
